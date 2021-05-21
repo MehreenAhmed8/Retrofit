@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_name">Retrofit</string>
     <string name="name">Name</string>
     <string name="password">Password</string>
     <string name="enter">Enter your staff credentials to access the assigned events you can manage</string>
@@ -7,4 +7,5 @@
     <string name="todo">TODO</string>
     <string name="sign_in">Sign In</string>
     <string name="no_name">No Name</string>
+    <string name="Sucess">Sucessfull</string>
 </resources>

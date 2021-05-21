@@ -1,4 +1,4 @@
-package com.example.myapp
+package com.synavos.retrofit
 
 import org.junit.Test
 
