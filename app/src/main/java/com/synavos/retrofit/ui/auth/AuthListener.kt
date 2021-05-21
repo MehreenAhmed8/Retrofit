@@ -1,10 +1,10 @@
 package com.synavos.retrofit.ui.auth
 
-import androidx.lifecycle.LiveData
+import com.synavos.retrofit.data.network.response.Data
 
 interface AuthListener {
 
     fun onStarted()
-    fun onSuccess(loginResponse: LiveData<String>)
+    fun onSuccess(data: Data)
     fun onFailure(message: String)
 }

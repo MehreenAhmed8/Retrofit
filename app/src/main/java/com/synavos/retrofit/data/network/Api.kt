@@ -1,7 +1,7 @@
 package com.synavos.retrofit.data.network
 
-import okhttp3.ResponseBody
-import retrofit2.Call
+import com.synavos.retrofit.data.network.response.LoginResponse
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Field
@@ -12,14 +12,14 @@ interface Api {
 
     @FormUrlEncoded
     @POST("/api/v1/admins/login")
-    fun userLogin(
+    suspend fun userLogin(
         @Field("username") username: String,
         @Field("password") password: String
-    ) : Call<ResponseBody>
+    ): Response<LoginResponse>
 
 
-    companion object{
-        operator fun invoke() : Api{
+    companion object {
+        operator fun invoke(): Api {
             return Retrofit.Builder()
                 .baseUrl("http://192.168.2.49:5032")
                 .addConverterFactory(GsonConverterFactory.create())

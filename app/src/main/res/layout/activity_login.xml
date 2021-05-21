@@ -104,7 +104,8 @@
         app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.254" />
+        app:layout_constraintVertical_bias="0.254"
+        tools:targetApi="lollipop" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
